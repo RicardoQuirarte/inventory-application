@@ -2,4 +2,12 @@ extends layout
 
 block content
   h1= title
-  p Welcome to the #{title}
+  p Bienvendidos a la #[strong base de datos] del mejor nutriologo deportivo de Veracruz.
+
+  h2 Contenido
+
+  p Esta base de datos contiene lo siguiente:
+
+  ul
+    li #[strong Mesotipos:] !{category_count}
+    li #[strong Pacientes:] !{patient_count}

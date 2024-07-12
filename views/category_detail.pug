@@ -1,0 +1,17 @@
+extends layout
+
+block content
+
+  h1 Categoria: #{category.name}
+
+  div(style='margin-left:20px;margin-top:20px')
+
+    h2(style='font-size: 1.5rem;') Pacientes
+    if category_patients.length
+      dl
+        each patient in category_patients
+          dt
+            a(href=patient.url) #{patient.name}
+          dd #{patient.price}
+    else
+      p No hay pacientes en esta categoria.

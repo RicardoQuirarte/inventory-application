@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const CategorySchema = new Schema({
-  mesotipo: {
+  name: {
     type: String,
     required: true,
     enum: ["Ectomorfo", "Mesomorfo", "Endomorfo"],
