@@ -13,7 +13,7 @@
       <h1><%= title %></h1>
 
       <table class="table table-striped table-hover">
-        <thead class="table-dark">
+        <thead class="table-primary">
           <tr>
             <th>Name</th>
             <th>Peso</th>
@@ -42,7 +42,7 @@
       <div class="btn-group">
         <a href="/" class="btn btn-outline-primary">Back to the main page</a>
         <a href="/update?id=<%= user[0].id %>" class="btn btn-outline-primary">Update patient</a>
-        <form action="/delete?id=<%= user[0].id %>" method="POST">
+        <form action="/delete?id=<%= user[0].id %>" method="DELETE">
           <button type="submit" class="btn btn-outline-danger">Delete patient</button>
         </form>
       </div>

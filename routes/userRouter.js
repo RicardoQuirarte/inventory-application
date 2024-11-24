@@ -10,7 +10,7 @@ usersRouter.get("/patient", usersController.searchPatient);
 usersRouter.get("/search", usersController.showPatient);
 usersRouter.get("/serchbyname", usersController.searchByName);
 usersRouter.get("/update", usersController.updatePatient);
-usersRouter.post("/update", usersController.updatePatientPost);
-usersRouter.post("/delete", usersController.deletePatient);
+usersRouter.put("/update", usersController.updatePatientPost);
+usersRouter.delete("/delete", usersController.deletePatient);
 
 module.exports = usersRouter;
